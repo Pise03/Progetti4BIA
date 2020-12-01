@@ -15,6 +15,9 @@ public class helo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int i=0;
+        int e=1;
+        int a=0;
     }
     
 }
