@@ -11,17 +11,13 @@
 public class Operazione5 implements Runnable {
 
     Buffer dati;
-    private double x;
-    private double t;
 
     public Operazione5(Buffer dati) {
         this.dati = dati;
-        x = dati.x;
-        t = dati.t;
     }
 
     public void run() {
-        dati.k = x + t;
+        dati.k = dati.x + dati.t;
         System.out.println("Ho calcolato il valore di k: " + dati.k);
     }
 }

@@ -45,13 +45,13 @@ public class CalcoloJoinMain {
         n4.start();
         
         try {
-            n1.join();
+            n4.join();
         } catch (InterruptedException ex) {
             Logger.getLogger(CalcoloJoinMain.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         try {
-            n4.join();
+            n1.join();
         } catch (InterruptedException ex) {
             Logger.getLogger(CalcoloJoinMain.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -63,9 +63,7 @@ public class CalcoloJoinMain {
         } catch (InterruptedException ex) {
             Logger.getLogger(CalcoloJoinMain.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
+          
     }
     
 }

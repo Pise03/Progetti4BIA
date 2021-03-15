@@ -10,17 +10,14 @@
  */
 public class Operazioni4 implements Runnable {
     Buffer dati;
-    private double y;
-    private double z;
+
     
     public Operazioni4(Buffer dati){
         this.dati = dati;
-        y = dati.y;
-        z = dati.z;
     }
     
     public void run(){
-        dati.t = y * z;
+        dati.t = dati.y * dati.z;
         System.out.println("Ho calcolato il valore di t: " + dati.t);
     }
     
